@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">DomaciZadatak15</string>
+    <string name="app_name">DomaciZadatak17</string>
     <string name="button_jela">Jela</string>
     <string name="button_kupi">Kupi</string>
+    <string name="second_activity_name">Druga aktivnost</string>
+
 </resources>

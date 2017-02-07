@@ -1,4 +1,4 @@
-package com.example.ivancrnogorac.domacizadatak15.Aktivnosti;
+package com.example.ivancrnogorac.domacizadatak15.aktivnosti;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

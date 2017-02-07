@@ -1,52 +1,59 @@
-package com.example.ivancrnogorac.domacizadatak15.Aktivnosti;
+package com.example.ivancrnogorac.domacizadatak15.aktivnosti;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.ivancrnogorac.domacizadatak15.R;
+import com.example.ivancrnogorac.domacizadatak15.aktivnosti.fragments.DetailedFragment;
+import com.example.ivancrnogorac.domacizadatak15.aktivnosti.fragments.FragmentsListe;
 
-import java.util.List;
-
-import Provajderi_Liste.ProvajderJela;
 
 /**
  * Created by Ivan Crnogorac on 2/5/2017.
  */
 
-public class SecondActivity extends Activity {
+public class SecondActivity extends Activity implements FragmentsListe.OnItemSelectedListener {
 
+    boolean landscape = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         // setContentView method draws UI
+        setContentView(R.layout.list_fragment_layaout);
+
+        // Draws layout
         setContentView(R.layout.second_activity);
 
 
-        // Loads fruits from array resource
-        final List<String> imenaJela = ProvajderJela.getImenaJela();
+        // If the activity is started for the first time create master fragment
+        if (savedInstanceState == null) {
+            // FragmentTransaction is a set of changes (e.g. adding, removing and replacing fragments) that you want to perform at the same time.
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            FragmentsListe masterFragment = new FragmentsListe();
+            ft.add(R.id.listaJela, masterFragment,  "Master_Fragment_1");
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            ft.commit();
+        }
 
-        // Creates an ArrayAdaptar from the array of String
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.list_item, imenaJela);
-        ListView listView = (ListView) findViewById(R.id.listaJela);
+        // If the device is in the landscape mode and the detail fragment is null create detail fragment
+        if (findViewById(R.id.fragment_detailed_layout) != null) {
+            landscape = true;
+            getFragmentManager().popBackStack();
 
-        // Assigns ArrayAdaptar to ListView
-        listView.setAdapter(dataAdapter);
-
-        // Starts the SecondActivity and sends it the selected URL as an extra data
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
-                intent.putExtra("position", position);
-                startActivity(intent);
+            FragmentsListe detailFragment = (FragmentsListe) getFragmentManager().findFragmentById(R.id.list_fragment_layaout);
+            if (detailFragment == null) {
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                detailFragment = new FragmentsListe();
+                ft.replace(R.id.fragment_detailed_layout, detailFragment, "Detail_Fragment_1");
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                ft.commit();
             }
-        });
+        }
+
 
     }
 
@@ -78,6 +85,27 @@ public class SecondActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+    @Override
+    public void onItemSelected(int position) {
+        // Shows a toast message (a pop-up message)
+        Toast.makeText(getBaseContext(), "SecondActivity.onItemSelected()", Toast.LENGTH_SHORT).show();
+
+        if (landscape) {
+            // If the device is in the landscape mode updates detail fragment's content.
+            DetailedFragment detailFragment = (DetailedFragment) getFragmentManager().findFragmentById(R.id.fragment_detailed_layout);
+            detailFragment.updateContent(position);
+        } else {
+            // If the device is in the portrait mode sets detail fragment's content and replaces master fragment with detail fragment in a fragment transaction.
+            DetailedFragment detailFragment = new DetailedFragment();
+            detailFragment.setContent(position);
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.list_fragment_layaout, detailFragment, "Detail_Fragment_2");
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            ft.addToBackStack(null);
+            ft.commit();
+        }
     }
 
 }

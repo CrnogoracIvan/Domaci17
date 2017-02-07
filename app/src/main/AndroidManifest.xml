@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <!--> Prva i glavna aktivnost <-->
-        <activity android:name=".Aktivnosti.MainActivity">
+        <activity android:name=".aktivnosti.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,8 +19,8 @@
         </activity>
 
         <!--> Druga aktivnost <-->
-        <activity android:name = ".Aktivnosti.SecondActivity">
-            android:name=".activities.SecondActivity"
+        <activity
+            android:name=".aktivnosti.SecondActivity"
             android:label="@string/second_activity_name"
             android:icon="@mipmap/ic_launcher">
         </activity>
@@ -28,11 +28,6 @@
 
 
         <!--> Treca aktivnost <-->
-        <activity android:name = ".Aktivnosti.ThirdActivity">
-            android:name=".activities.ThirdActivity"
-            android:label="@string/third_activity_name"
-            android:icon="@mipmap/ic_launcher">
-        </activity>
 
 
     </application>

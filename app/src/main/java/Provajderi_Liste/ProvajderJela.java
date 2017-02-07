@@ -1,10 +1,10 @@
-package Provajderi_Liste;
+package provajderi_liste;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Model.Jelo;
-import Model.KategrorijaJela;
+import model.Jelo;
+import model.KategrorijaJela;
 
 /**
  * Created by Ivan Crnogorac on 2/5/2017.

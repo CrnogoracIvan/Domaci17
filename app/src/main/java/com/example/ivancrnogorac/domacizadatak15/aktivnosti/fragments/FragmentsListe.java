@@ -1,5 +1,6 @@
-package Fragmenti;
+package com.example.ivancrnogorac.domacizadatak15.aktivnosti.fragments;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,17 +11,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.List;
-
-import Provajderi_Liste.ProvajderJela;
-
 import com.example.ivancrnogorac.domacizadatak15.R;
 
+import java.util.List;
+
+import provajderi_liste.ProvajderJela;
+
 /**
- * Created by androiddevelopment on 6.2.17..
+ * Created by Ivan Crnogorac on 2/7/2017.
  */
 
-public class ListFragment extends Fragment {
+public class FragmentsListe extends Fragment {
 
     //prvo se rucno postavi na kraju nova metoda pa se onda kreiran ovo:
     OnItemSelectedListener listener;
@@ -32,7 +33,7 @@ public class ListFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         // Shows a toast message (a pop-up message)
-        Toast.makeText(getActivity(), "listFragment.onCreate()", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "FragmentsListe.onCreate()", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -62,19 +63,14 @@ public class ListFragment extends Fragment {
 
     }
 
-    // Container activity must implement this interface
-    //Rucno pravljenje metode OnItemSelectedListener
-    public interface OnItemSelectedListener {
 
-        public void onItemSelected(int position);
-    }
 
     // onCreateView method is a life-cycle method that is called to have the fragment instantiate its user interface view.
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         // Shows a toast message (a pop-up message)
-        Toast.makeText(getActivity(), "ListFragment.onCreateView()", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "FragmentsListe.onCreateView()", Toast.LENGTH_SHORT).show();
 
         if (container == null) {
             return null;
@@ -83,6 +79,29 @@ public class ListFragment extends Fragment {
         View view = inflater.inflate(R.layout.list_fragment_layaout, container, false);
 
         return view;
+    }
+    //ne znam cemu sluzi :)
+    @Override
+    public void onAttach(Activity activity) {
+
+        super.onAttach(activity);
+
+        // Shows a toast message (a pop-up message)
+        Toast.makeText(getActivity(), "FragmentsListe.onAttach()", Toast.LENGTH_SHORT).show();
+
+        try {
+            listener = (OnItemSelectedListener) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString() + " must implement OnItemSelectedListener");
+        }
+    }
+    // Container activity must implement this interface
+
+
+    //Rucno pravljenje metode OnItemSelectedListener
+    public interface OnItemSelectedListener {
+
+        public void onItemSelected(int position);
     }
 
 }
