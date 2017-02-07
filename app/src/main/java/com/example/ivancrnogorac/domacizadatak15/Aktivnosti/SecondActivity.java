@@ -16,6 +16,7 @@ import com.example.ivancrnogorac.domacizadatak15.aktivnosti.fragments.FragmentsL
 
 public class SecondActivity extends Activity implements FragmentsListe.OnItemSelectedListener {
 
+
     boolean landscape = false;
 
     @Override
