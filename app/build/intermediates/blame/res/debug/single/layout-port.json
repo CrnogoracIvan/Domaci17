@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\build\\intermediates\\res\\merged\\debug\\layout-port\\list_fragment_layaout.xml",
+        "source": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\src\\main\\res\\layout-port\\list_fragment_layaout.xml"
+    },
+    {
+        "merged": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\build\\intermediates\\res\\merged\\debug\\layout-port\\activity_main.xml",
+        "source": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\src\\main\\res\\layout-port\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\build\\intermediates\\res\\merged\\debug\\layout-port\\list_item.xml",
+        "source": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\src\\main\\res\\layout-port\\list_item.xml"
+    },
+    {
+        "merged": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\build\\intermediates\\res\\merged\\debug\\layout-port\\second_activity.xml",
+        "source": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\src\\main\\res\\layout-port\\second_activity.xml"
+    },
+    {
+        "merged": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\build\\intermediates\\res\\merged\\debug\\layout-port\\fragment_detailed.xml",
+        "source": "E:\\Programiranje\\Android Development\\RadnaPovrsina\\AndroidDevelopment\\Domaci17\\app\\src\\main\\res\\layout-port\\fragment_detailed.xml"
+    }
+]
