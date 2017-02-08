@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_26210d781458ceac7b7cf4bf3deecb03f1009dab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_da173b6bab04167a617871a99bc0828c2fbd8067.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_466a012218d5d1b1aabaee873ee23eadfb3060dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_96285340badbee92ac0bfd1bf3e88f3ee1d95b57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_b99665049711028084c8737f4a993cc6a895f95e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1520407760b4b3804d2389ebb4de8e5519d2eff">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\instant-run_326770ff07251f6d7cc84562875a15ce3af14ffc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_33f6b650daa3bbc8dd9ec5dc3c8367b17d4c9f60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_4cce56e3c3978c030cf4a421db41522e2ac48d1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2983642e95506d293910ef2e63901d1807e4a5a3">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_ad0b0a8afe8f6c1ef6ad0948ba6aca4a413b562c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_4462c1de638ac3cab644720b1cba8f21528b3867.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_bf632ff23d6a6589e7dfc019f404b864fa3b9e77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="E:\Programiranje\Android Development\RadnaPovrsina\AndroidDevelopment\Domaci17\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_20005e2ac4231b7f81278ee20ac9ea9590709691.jar" />
+    </item>
+
+</items>
